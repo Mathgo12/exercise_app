@@ -1,0 +1,124 @@
+body {
+    margin: 0px 0px;
+    max-width: 1000px;
+    color: #1d3557;
+    font-family: 'Optima, sans-serif';
+}
+
+h1 {
+    font-size: 60px;
+    transition: ease-in-out 0.5s;
+    text-align: center;
+}
+
+p {
+    font-family: "New Century Schoolbook, TeX Gyre Schola";
+
+}
+
+.header {
+  width: 100%;
+  padding:0px 268;
+  text-align: center;
+  background: #009933;
+  text-shadow: 0 0 3px #000000, 0 0 5px #0000FF;
+  color: #33CCFF;
+}
+
+.quote-banner {
+    width:80%;
+    height:60px;
+    margin: 0 auto;
+    text-align:center;
+    background-color:rgba(3,78,136,0.7);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.workout-log {
+    width: 300px;
+    height: 400px;
+    font-weight: bold;
+    line-height: 40px;
+    background: yellow;
+    margin: 5%;
+    text-align: center;
+}
+
+.spotify {
+    width: 400px;
+    height: 400px;
+    font-weight: bold;
+    line-height: 40px;
+    background: green;
+    margin: 5%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.wrapper {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: cen;
+}
+
+.workout-table-background {
+    background: #660066;
+    width: 300px;
+    height:350 px;
+    margin: 0;
+    text-align: center;
+}
+
+.workout-log2 {
+    background: #660066;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+table, th, td {
+    border: 2px solid;
+    width: 300px;
+    border-collapse: collapse;
+}
+
+input {
+    width: 60px;
+}
+
+.exercise-type-banner {
+    width:60%;
+    height:60px;
+    margin: 0 auto;
+    text-align:center;
+    background-color:#cc99ff;
+    color:#660066;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+button {
+    width: 20%;
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    background-color: #ffcc66;
+    border-radius: 5px;
+}
+
+.button-wrapper{
+    justify-content: cen;
+}
