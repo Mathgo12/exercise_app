@@ -10,8 +10,8 @@ quoteButton.addEventListener("click", function () {
 async function getQuoteData() {
     let data = await apiCall(quoteUrl);
     return {
-        "cotent": data.quote,
-        "author": data.author,
+        "content": data[0].quote,
+        "author": data[0].author,
     }
 }
 
@@ -22,9 +22,7 @@ async function setQuoteText() {
     quoteText.innerHTML = content;
 }
 
-let options = {
-    headers: {'X-Api-Key': apiKey},
-}
+
 
 async function apiCall(url) {
     let response = await fetch(url, options)
@@ -32,5 +30,11 @@ async function apiCall(url) {
     return data
 }
 
+
+let options = {
+    method: 'GET',
+    headers: {'X-Api-Key': apiKey},
+    contentType: 'application/json',
+}
 
 
