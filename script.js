@@ -7,6 +7,7 @@ let options = {
     headers: {'X-Api-Key': apiKey},
     contentType: 'application/json',
 }
+presetQuote = '"This is a preset quote bc generated quote is too long" -Eric'
 
 quoteButton.addEventListener("click", function () {
     setQuoteText();
@@ -24,7 +25,12 @@ async function setQuoteText() {
     let quoteData = await getQuoteData();
     const content = quoteData.content;
     const author = quoteData.author;
-    quoteText.innerHTML = '"' + content + '"' + " -" + author;
+    if (content.length > 500) {
+        quoteText.innerHTML = presetQuote;
+    } else {
+        quoteText.innerHTML = '"' + content + '"' + " -" + author;
+    }
+    
 }
 
 
