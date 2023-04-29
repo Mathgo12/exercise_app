@@ -9,8 +9,9 @@ let options = {
 }
 presetQuote = '"This is a preset quote bc generated quote is too long" -Eric'
 
+
 quoteButton.addEventListener("click", function () {
-    setQuoteText();
+    setQuoteText()
 });
 
 async function getQuoteData() {
@@ -32,8 +33,6 @@ async function setQuoteText() {
     }
     
 }
-
-
 
 async function apiCall(url) {
     let response = await fetch(url, options)
