@@ -9,36 +9,29 @@ let options = {
 }
 presetQuote = '"This is a preset quote bc generated quote is too long" -Eric'
 
-
 quoteButton.addEventListener("click", function () {
     setQuoteText()
 });
-
-async function getQuoteData() {
-    let data = await apiCall(quoteUrl);
-    return {
-        "content": data[0].quote,
-        "author": data[0].author,
-    }
-}
-
-async function setQuoteText() {
-    let quoteData = await getQuoteData();
-    const content = quoteData.content;
-    const author = quoteData.author;
-    if (content.length > 500) {
-        quoteText.innerHTML = presetQuote;
-    } else {
-        quoteText.innerHTML = '"' + content + '"' + " -" + author;
-    }
-    
-}
 
 async function apiCall(url) {
     let response = await fetch(url, options)
     let data = await response.json()
     return data
 }
+
+async function setQuoteText() {
+    let data = await apiCall(quoteUrl);
+    const quote = data[0].quote;
+    const author = data[0].author;
+    if (quote.length > 500) {
+        quoteText.innerHTML = presetQuote;
+    } else {
+        quoteText.innerHTML = '"' + quote + '"' + " -" + author;
+    }
+    
+}
+
+
 
 
 
