@@ -2,6 +2,11 @@ quoteButton = document.getElementById("quoteButton");
 quoteText = document.getElementById("quoteText");
 let quoteUrl = "https://api.api-ninjas.com/v1/quotes?category=inspirational"
 let apiKey = "eB8MBQ68gY/PPCjzioEUqQ==OruEx0QHdYMVlm6f"
+let options = {
+    method: 'GET',
+    headers: {'X-Api-Key': apiKey},
+    contentType: 'application/json',
+}
 
 quoteButton.addEventListener("click", function () {
     setQuoteText();
@@ -19,7 +24,7 @@ async function setQuoteText() {
     let quoteData = await getQuoteData();
     const content = quoteData.content;
     const author = quoteData.author;
-    quoteText.innerHTML = content;
+    quoteText.innerHTML = '"' + content + '"' + " -" + author;
 }
 
 
@@ -30,11 +35,5 @@ async function apiCall(url) {
     return data
 }
 
-
-let options = {
-    method: 'GET',
-    headers: {'X-Api-Key': apiKey},
-    contentType: 'application/json',
-}
 
 
