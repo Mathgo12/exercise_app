@@ -33,5 +33,30 @@ async function setQuoteText() {
 
 
 
+exerciseUrl = "https://api.api-ninjas.com/v1/exercises?difficulty=beginner&"
+pushButton = document.getElementById("pushButton");
+pullButton = document.getElementById("pullButton");
+legsButton = document.getElementById("legsButton");
+pushText = document.getElementById("pushText");
+pullText = document.getElementById("pullText");
+legsText = document.getElementById("legsText");
+let muscle = "";
+
+
+pushButton.addEventListener("click", function () {
+    setQuoteText()
+});
+
+pullButton.addEventListener("click", function () {
+    setQuoteText()
+});
+
+legsButton.addEventListener("click", function () {
+    setQuoteText()
+});
+
+
+
+
 
 
