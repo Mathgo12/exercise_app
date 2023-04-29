@@ -33,7 +33,7 @@ async function setQuoteText() {
 
 
 
-exerciseUrl = "https://api.api-ninjas.com/v1/exercises?difficulty=beginner&"
+exerciseUrl = "https://api.api-ninjas.com/v1/exercises?difficulty=beginner&muscle="
 pushButton = document.getElementById("pushButton");
 pullButton = document.getElementById("pullButton");
 legsButton = document.getElementById("legsButton");
@@ -44,19 +44,28 @@ let muscle = "";
 
 
 pushButton.addEventListener("click", function () {
-    setQuoteText()
+    muscle = "chest"
+    generateWorkout()
 });
 
 pullButton.addEventListener("click", function () {
-    setQuoteText()
+    muscle = "lower_back"
+    generateWorkout()
 });
 
 legsButton.addEventListener("click", function () {
-    setQuoteText()
+    muscle = "glutes"
+    generateWorkout()
 });
 
 
+async function generateWorkout() {
+    let data = await apiCall(exerciseUrl+muscle);
+    const name = data[0].name;
+    const instr = data[0].instructions;
+    pushText.innerHTML = name;
 
+}
 
 
 
