@@ -31,8 +31,6 @@ async function setQuoteText() {
     
 }
 
-
-
 exerciseUrl = "https://api.api-ninjas.com/v1/exercises?difficulty=beginner&muscle="
 pushButton = document.getElementById("pushButton");
 pullButton = document.getElementById("pullButton");
