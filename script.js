@@ -61,9 +61,13 @@ legsButton.addEventListener("click", function () {
 
 async function generateWorkout() {
     let data = await apiCall(exerciseUrl+muscle);
-    const name = data[0].name;
+    let names = []
+    for (let i = 0; i<data.length; i++) {
+        names += data[i].name
+    }
+    const name = data[1].name;
     const instr = data[0].instructions;
-    pushText.innerHTML = name;
+    pushText.innerHTML = names;
 
 }
 
