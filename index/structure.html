@@ -9,12 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
     <title>No SHAME</title>
 </head>
+<body>
 <section class="header">
-    <h1>No SHAME</h1>
+    <h1>No SHAME!</h1>
 </section>
 <p class="quote-banner">
     ""You miss 100% of the shots you don't take." - Wayne Gretzky" - Michael Scott
 </p>
+
+<div>
+    <p id="quoteText" class="quote-banner">quoteText</p>
+    <button id="quoteButton">New Quote</button>
+</div>
+
+
 <div class="wrapper">
     <div class="workout-log" style = "position:relative; left:80px; top:2px;">
     Workout Log
@@ -64,8 +72,10 @@
     What Type of Exercise Are You Trying To Do?
 </p>
 <div class="button-wrapper">
-    <button type="button">Push</button>
-    <button type="button">Pull</button>
-    <button type="button">Legs</button>
+    <button type="button" id="pushButton">Push</button> <p id="pushText"></p>
+    <button type="button" id="pullButton">Pull</button> <p id="pullText"></p>
+    <button type="button" id="legsButton">Legs</button> <p id="legsText"></p>
 </div>
+</body>
+<script src="script.js"></script>
 </html>
