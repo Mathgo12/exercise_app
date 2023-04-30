@@ -1,6 +1,6 @@
 body {
     margin: 0px 0px;
-    max-width: 1000px;
+    max-width: 100%;
     color: #1d3557;
     font-family: 'Optima, sans-serif';
 }
@@ -13,12 +13,11 @@ h1 {
 
 p {
     font-family: "New Century Schoolbook, TeX Gyre Schola";
-
 }
 
 .header {
   width: 100%;
-  padding:0px 268;
+  padding: auto;
   text-align: center;
   background: #009933;
   text-shadow: 0 0 3px #000000, 0 0 5px #0000FF;
@@ -26,7 +25,7 @@ p {
 }
 
 .quote-banner {
-    width:80%;
+    width:60%;
     margin: 0 auto;
     text-align:center;
     background-color:rgba(3,78,136,0.7);
@@ -38,8 +37,8 @@ p {
 }
 
 .workout-log {
-    width: 300px;
-    height: 400px;
+    width: 25%;
+    height: 60%;
     font-weight: bold;
     line-height: 40px;
     background: yellow;
@@ -62,7 +61,8 @@ p {
     gap: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: cen;
+    justify-content: center;
+    width: 100%;
 }
 
 .workout-table-background {
