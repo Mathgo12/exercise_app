@@ -2,7 +2,7 @@ body {
     margin: 0px 0px;
     max-width: 100%;
     color: #1d3557;
-    font-family: 'Optima, sans-serif';
+    font-family: 'Comfortaa', cursive;
 }
 
 h1 {
@@ -12,7 +12,7 @@ h1 {
 }
 
 p {
-    font-family: "New Century Schoolbook, TeX Gyre Schola";
+    font-family: "Comfortaa";
 }
 
 .header {
@@ -20,15 +20,16 @@ p {
   padding: auto;
   text-align: center;
   background: #009933;
-  text-shadow: 0 0 3px #000000, 0 0 5px #0000FF;
-  color: #33CCFF;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  color: #D92511;
 }
 
 .quote-banner {
     width:60%;
-    margin: 0 auto;
+    margin: auto;
+    font-family: 'Comfortaa', cursive;
     text-align:center;
-    background-color:rgba(3,78,136,0.7);
+    background-color:#7765E3;
     color:white;
     display: flex;
     justify-content: center;
@@ -36,14 +37,19 @@ p {
     border-radius: 25px;
 }
 
+.picture-wrapper {
+
+}
+
 .workout-log {
     width: 25%;
     height: 60%;
     font-weight: bold;
     line-height: 40px;
-    background: yellow;
+    background: #ccffcc;
     margin: 5%;
     text-align: center;
+    border-radius: 10px;
 }
 
 .spotify {
@@ -66,7 +72,7 @@ p {
 }
 
 .workout-table-background {
-    background: #660066;
+    background: #D92511;
     width: 300px;
     height:350 px;
     margin: 0;
@@ -74,15 +80,15 @@ p {
 }
 
 .workout-log2 {
-    background: #660066;
+    background: #D92511;
     margin: 0;
     text-align: center;
-    color: white;
+    color: BLACK;
 }
 
 table, th, td {
     border: 2px solid;
-    width: 300px;
+    width: 35%;
     border-collapse: collapse;
 }
 
@@ -94,7 +100,7 @@ input {
     width:60%;
     height:60px;
     margin: 0 auto;
-    text-align:center;
+    text-align: center;
     background-color:#cc99ff;
     color:#660066;
     font-size: 23px;
@@ -106,7 +112,7 @@ input {
 }
 
 button {
-    width: 20%;
+    width: 10%;
     height: 10%;
     margin: 0 auto;
     display: flex;
@@ -114,10 +120,14 @@ button {
     align-items: center;
     font-size: 23px;
     font-weight: bold;
-    background-color: #ffcc66;
+    background-color: #80dfff;
     border-radius: 5px;
 }
 
 .button-wrapper{
-    justify-content: cen;
+    gap: 0px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
