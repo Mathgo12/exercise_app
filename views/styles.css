@@ -25,6 +25,12 @@ p {
   color: #ccffcc;
 }
 
+.menu {
+   display: flex;
+   justify-content: space-evenly;
+   background-color: #32A287;
+}
+
 .quote-banner {
     width:60%;
     margin: auto;

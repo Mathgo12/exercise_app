@@ -8,9 +8,14 @@ workoutButton = document.getElementById("workout-submit");
 workoutText = document.getElementById("workoutText");
 workoutTable = document.getElementById("workout-table");
 workoutButtonDelete = document.getElementById("workout-delete");
+//menuMainButton = document.getElementById("menu-main");
 
 workoutButton.addEventListener("click", addWorkout);
 workoutButtonDelete.addEventListener("click", deleteWorkout);
+//menuMainButton.addEventListener("click", async () => {
+//    console.log("called")
+//    await getRequest("http://localhost:3000/")
+//})
 
 showWorkouts();
 
