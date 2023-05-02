@@ -25,36 +25,20 @@ p {
   color: #ccffcc;
 }
 
-.quote-banner {
-    width:60%;
-    margin: auto;
-    font-family: 'Nunito', cursive;
-    text-align:center;
-    color:#32A287;
-    font-size: 50px;
-    font-weight: bold;
+.log-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    margin-top: 10%;
-    margin-bottom: 4%;
-}
-
-.picture-wrapper {
-
 }
 
 .workout-log {
-    width: 25%;
     height: 60%;
-    justify-content: center;
-    align-items: center;
     font-weight: bold;
-    line-height: 40px;
-    background: #ccffcc;
-    margin: 5%;
+    font-size: 40px;
+    background: white;
+    margin-left: 0%;
     text-align: center;
+    justify-content: center;
     border-radius: 10px;
 }
 
@@ -64,40 +48,61 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-}
-
-.workout-table-background {
-    background: #D92511;
-    width: 300px;
-    height:350 px;
-    margin: 0;
-    text-align: center;
+    margin-bottom: 3%;
 }
 
 .workout-log2 {
-    background: #D92511;
-    margin: 0;
+    background: #A9FDAC;
     text-align: center;
     color: BLACK;
 }
 
-table, th, td {
+th, td {
+	border: 1px solid black;
+	padding: 8px;
+}
+
+thead th {
+  width: 40%;
+}
+
+thead td {
+    width: 20%;
+}
+
+table {
     border: 2px solid;
-    width: 35%;
+    font-size: 20px;
+    background-color: #A9FDAC;
+    table-layout: auto;
     border-collapse: collapse;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 input {
-    width: 60px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #32A287;
+    margin-bottom: 10%;
+    font-family: "Nunito";
+    font-size: 18px;
+    width: 50%;
+    color: #F1FFE7;
+    border-radius: 8px;
 }
 
 .exercise-type-banner {
-    width:60%;
-    height:5%;
+    width:45%;
+    height:7%;
     margin: 0 auto;
+    margin-bottom: 3%;
     text-align: center;
-    background-color:#cc99ff;
-    color:#660066;
+    background-color:#1d3557;
+    color:white;
     font-size: 23px;
     font-weight: bold;
     display: flex;
@@ -107,9 +112,10 @@ input {
 }
 
 button {
-    width: 20%;
-    height: 7%;
-    margin: 0 auto;
+    width: 10%;
+    height: 10%;
+    margin-right: 2%;
+    margin-left: 2%;
     margin-bottom: 10%;
     display: flex;
     justify-content: center;
@@ -117,15 +123,26 @@ button {
     font-family: "Nunito";
     font-size: 23px;
     font-weight: bold;
-    color: black;
+    color: F1FFE7;
     background-color: #32A287;
     border-radius: 5px;
 }
 
 .button-wrapper{
-    gap: 0px;
     display: inline-flex;
+    font-size: 0;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+}
+
+.workout-text {
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+    margin: auto;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }

@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/secondstyles.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body style="background-color:white;">
+<section class="header">
+    <h1>No SHAME!</h1>
+</section>
+<div class="log-wrapper">
+    <div class="workout-log">
+    Workout Log
+    <table id="workout-table">
+        <tr>
+            <th>Exercise</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>Muscle Group</th>
+<!--            <th><input type="submit" id="workout-delete" value="X"></th>-->
+            <th><b id="workout-delete">x</b></th>
+        </tr>
+        <tr>
+              <td>
+                  <input type="text" id="workout-name" name="fname">
+              </td>
+              <td>
+                  <input type="text" id="workout-sets" name="fname">
+              </td>
+              <td>
+                  <input type="text" id="workout-reps" name="fname">
+              </td>
+              <td>
+                  <input type="text" id="workout-muscle" name="fname">
+              </td>
+        </tr>
+      </table>
+      <input type="submit" id="workout-submit" value="Submit Workout">
+    </div>
+</div>
+<p class="exercise-type-banner">
+    What Type of Exercise Are You Trying To Do?
+</p>
+<div class="workout-text" id="workout-text">
+    <p id="workoutText"></p>
+</div>
+<div class = "wrapper">
+<section id = "image">
+    <img src="SIX_7ABDB993-A08E-462A-9706-59663F0D3318.PNG"
+    width = "200"
+    length = "200" />
+    <img src="SIX_049FC10E-10EF-4F74-84FA-5BB128E747C5.PNG"
+    width = "200"
+    length = "200" />
+    <img src="SIX_876FAF28-3F23-401B-B275-90184B3152CA.PNG"
+    width = "200"
+    length = "200" />
+</section>
+</div>
+
+<div class="button-wrapper">
+    <button type="button" id="pushButton">Push</button>
+    <button type="button" id="pullButton">Pull</button>
+    <button type="button" id="legsButton">Legs</button>
+</div>
+
+<script src="/secondscript.js"></script>
+</body>
+</html>

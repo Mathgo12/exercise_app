@@ -5,7 +5,7 @@ let apiKey = "eB8MBQ68gY/PPCjzioEUqQ==OruEx0QHdYMVlm6f"
 let options = {
     method: 'GET',
     headers: {'X-Api-Key': apiKey},
-    contentType: 'application/json',
+    contentType: 'application/json'
 }
 presetQuote = '"This is a preset quote bc generated quote is too long" -Eric'
 
@@ -31,61 +31,6 @@ async function setQuoteText() {
     
 }
 
-exerciseUrl = "https://api.api-ninjas.com/v1/exercises?difficulty=beginner&muscle="
-pushButton = document.getElementById("pushButton");
-pullButton = document.getElementById("pullButton");
-legsButton = document.getElementById("legsButton");
-pushText = document.getElementById("pushText");
-pullText = document.getElementById("pullText");
-legsText = document.getElementById("legsText");
-let muscle = "";
-
-
-pushButton.addEventListener("click", function () {
-    muscle = "chest"
-    generateWorkout()
-});
-
-pullButton.addEventListener("click", function () {
-    muscle = "lower_back"
-    generateWorkout()
-});
-
-legsButton.addEventListener("click", function () {
-    muscle = "glutes"
-    generateWorkout()
-});
-
-
-async function generateWorkout() {
-    let data = await apiCall(exerciseUrl+muscle);
-    let exercises = []
-    function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
-    }
-    let i = getRandomInt(0, data.length)
-    exercises.push(data[i].name + ": " + data[i].instructions)
-
-    pushText.innerHTML = "";
-    pullText.innerHTML = "";
-    legsText.innerHTML = "";
-    switch(muscle) {
-        case "chest":
-            pushText.innerHTML = exercises;
-            break;
-        case "lower_back":
-            // code block
-            pullText.innerHTML = exercises;
-            break;
-        case "glutes":
-            // code block
-            legsText.innerHTML = exercises;
-      }
-    
-
-}
 
 
 

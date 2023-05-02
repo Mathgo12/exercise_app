@@ -16,12 +16,27 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/structure.html');
 })
 
-app.post('/new_workout', (req, res) => {
+app.get('/workouts', (req, res) => {
+    res.sendFile(__dirname + '/views/secondpage.html');
+})
+
+app.post('/new_workout', async (req, res) => {
    console.log(req.body)
-   const workout = Workout.create({muscle_group: req.body.muscle_group,
+   const workout = await Workout.create({muscle_group: req.body.muscle_group,
                         workout_name: req.body.workout_name, sets: req.body.sets, reps: req.body.reps})
                         .then(() => console.log("New Workout Created"))
    res.send(workout)
+})
+
+app.get('/all_workouts', async (req, res) => {
+    const myWorkouts = await Workout.find();
+    res.send(myWorkouts);
+})
+
+app.delete('/delete_all_workouts', async(req, res) => {
+    await Workout.deleteMany({}).then(() => console.log("Deleted All"))
+    .catch((err) => console.log(err))
+    res.end()
 })
 
 app.use(express.static('views'))
