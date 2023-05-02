@@ -1,0 +1,131 @@
+body {
+    margin: 0px 0px;
+    max-width: 100%;
+    color: #1d3557;
+    font-family: 'Nunito';
+}
+
+h1 {
+    font-size: 60px;
+    transition: ease-in-out 0.5s;
+    text-align: center;
+}
+
+p {
+    font-family: "Nunito";
+    color: #32A287;
+}
+
+.header {
+  width: 100%;
+  padding: auto;
+  text-align: center;
+  background: #32A287;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  color: #ccffcc;
+}
+
+.quote-banner {
+    width:60%;
+    margin: auto;
+    font-family: 'Nunito', cursive;
+    text-align:center;
+    color:#32A287;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+
+.picture-wrapper {
+
+}
+
+.workout-log {
+    width: 25%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    line-height: 40px;
+    background: #ccffcc;
+    margin: 5%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.wrapper {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.workout-table-background {
+    background: #D92511;
+    width: 300px;
+    height:350 px;
+    margin: 0;
+    text-align: center;
+}
+
+.workout-log2 {
+    background: #D92511;
+    margin: 0;
+    text-align: center;
+    color: BLACK;
+}
+
+table, th, td {
+    border: 2px solid;
+    width: 35%;
+    border-collapse: collapse;
+}
+
+input {
+    width: 60px;
+}
+
+.exercise-type-banner {
+    width:60%;
+    height:5%;
+    margin: 0 auto;
+    text-align: center;
+    background-color:#cc99ff;
+    color:#660066;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+button {
+    width: 20%;
+    height: 7%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito";
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+    background-color: #32A287;
+    border-radius: 5px;
+}
+
+.button-wrapper{
+    gap: 0px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
