@@ -2,7 +2,7 @@ body {
     margin: 0px 0px;
     max-width: 100%;
     color: #1d3557;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Nunito';
 }
 
 h1 {
@@ -12,29 +12,33 @@ h1 {
 }
 
 p {
-    font-family: "Comfortaa";
+    font-family: "Nunito";
+    color: #32A287;
 }
 
 .header {
   width: 100%;
   padding: auto;
   text-align: center;
-  background: #009933;
+  background: #32A287;
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-  color: #D92511;
+  color: #ccffcc;
 }
 
 .quote-banner {
     width:60%;
     margin: auto;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Nunito', cursive;
     text-align:center;
-    background-color:#7765E3;
-    color:white;
+    color:#32A287;
+    font-size: 50px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+    margin-top: 10%;
+    margin-bottom: 4%;
 }
 
 .picture-wrapper {
@@ -57,7 +61,7 @@ p {
     height: 400px;
     font-weight: bold;
     line-height: 40px;
-    background: green;
+    background: #32A287;
     margin: 5%;
     text-align: center;
     border-radius: 10px;
@@ -98,7 +102,7 @@ input {
 
 .exercise-type-banner {
     width:60%;
-    height:60px;
+    height:5%;
     margin: 0 auto;
     text-align: center;
     background-color:#cc99ff;
@@ -112,15 +116,18 @@ input {
 }
 
 button {
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 7%;
     margin: 0 auto;
+    margin-bottom: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Nunito";
     font-size: 23px;
     font-weight: bold;
-    background-color: #80dfff;
+    color: black;
+    background-color: #32A287;
     border-radius: 5px;
 }
 
