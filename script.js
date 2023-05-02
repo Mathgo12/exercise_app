@@ -61,13 +61,31 @@ legsButton.addEventListener("click", function () {
 
 async function generateWorkout() {
     let data = await apiCall(exerciseUrl+muscle);
-    let names = []
-    for (let i = 0; i<data.length; i++) {
-        names += data[i].name
+    let exercises = []
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
     }
-    const name = data[1].name;
-    const instr = data[0].instructions;
-    pushText.innerHTML = names;
+    let i = getRandomInt(0, data.length)
+    exercises.push(data[i].name + ": " + data[i].instructions)
+
+    pushText.innerHTML = "";
+    pullText.innerHTML = "";
+    legsText.innerHTML = "";
+    switch(muscle) {
+        case "chest":
+            pushText.innerHTML = exercises;
+            break;
+        case "lower_back":
+            // code block
+            pullText.innerHTML = exercises;
+            break;
+        case "glutes":
+            // code block
+            legsText.innerHTML = exercises;
+      }
+    
 
 }
 
